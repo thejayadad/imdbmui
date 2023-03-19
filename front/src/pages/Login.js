@@ -26,6 +26,10 @@ const Login = () => {
         <Button
         sx={{
             background: "#2e2e2e",
+             '&:hover': {
+          backgroundColor: '#222',
+          opacity: [0.9, 0.8, 0.7],
+             },
             height: "48px",
             borderRadius: "2px",
             width: "60%",
