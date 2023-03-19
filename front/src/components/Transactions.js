@@ -19,19 +19,71 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
     },
   }));
 
+  const StyledTableRow = styled(TableRow)(({ theme }) => ({
+    '&:nth-of-type(odd)': {
+      backgroundColor: theme.palette.action.hover,
+    },
+    '&:last-child td, &:last-child th': {
+      border: 0,
+    },
+  }));
+
 const Transactions = () => {
   return (
-    <TableContainer component={Paper}>
-    <Table sx={{ maxWidth: 700 }} aria-label="customized table">
+    <TableContainer sx={{borderRadius: 0}} component={Paper}>
+    <Table sx={{ maxWidth: 700,  }} aria-label="customized table">
     <TableHead>
           <TableRow>
-            <StyledTableCell>Dessert (100g serving)</StyledTableCell>
-            <StyledTableCell align="right">Calories</StyledTableCell>
-            <StyledTableCell align="right">Fat&nbsp;(g)</StyledTableCell>
-            <StyledTableCell align="right">Carbs&nbsp;(g)</StyledTableCell>
-            <StyledTableCell align="right">Protein&nbsp;(g)</StyledTableCell>
+            <StyledTableCell>Date</StyledTableCell>
+            <StyledTableCell >Amount</StyledTableCell>
+            <StyledTableCell >Type</StyledTableCell>
+            <StyledTableCell >Category</StyledTableCell>
+            <StyledTableCell>Reference</StyledTableCell>
+            <StyledTableCell>Action</StyledTableCell>
           </TableRow>
         </TableHead>
+        <TableBody>
+        <StyledTableRow>
+              <StyledTableCell component="th" scope="row">
+                Date
+              </StyledTableCell>
+              <StyledTableCell >Amount</StyledTableCell>
+              <StyledTableCell >Type</StyledTableCell>
+              <StyledTableCell >Category</StyledTableCell>
+              <StyledTableCell>Reference</StyledTableCell>
+              <StyledTableCell>Action</StyledTableCell>
+            </StyledTableRow>
+            <StyledTableRow>
+              <StyledTableCell component="th" scope="row">
+                Date
+              </StyledTableCell>
+              <StyledTableCell >Amount</StyledTableCell>
+              <StyledTableCell >Type</StyledTableCell>
+              <StyledTableCell >Category</StyledTableCell>
+              <StyledTableCell>Reference</StyledTableCell>
+              <StyledTableCell>Action</StyledTableCell>
+            </StyledTableRow>
+            <StyledTableRow>
+              <StyledTableCell component="th" scope="row">
+                Date
+              </StyledTableCell>
+              <StyledTableCell >Amount</StyledTableCell>
+              <StyledTableCell >Type</StyledTableCell>
+              <StyledTableCell >Category</StyledTableCell>
+              <StyledTableCell>Reference</StyledTableCell>
+              <StyledTableCell>Action</StyledTableCell>
+            </StyledTableRow>
+            <StyledTableRow>
+              <StyledTableCell component="th" scope="row">
+                Date
+              </StyledTableCell>
+              <StyledTableCell >Amount</StyledTableCell>
+              <StyledTableCell >Type</StyledTableCell>
+              <StyledTableCell >Category</StyledTableCell>
+              <StyledTableCell>Reference</StyledTableCell>
+              <StyledTableCell>Action</StyledTableCell>
+            </StyledTableRow>
+    </TableBody>
     </Table>
     </TableContainer>
   )
