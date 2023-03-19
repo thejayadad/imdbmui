@@ -9,6 +9,7 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import Modal from '@mui/material/Modal';
+import Transactions from '../components/Transactions';
 
 
 const style = {
@@ -110,6 +111,16 @@ const Home = () => {
             </FormControl>
         </Box>
       </Modal>
+       </Box>
+       <Box
+       sx={{
+        width: "100%",
+        background: "#555",
+        marginTop: "25px",
+        padding: "40px"
+       }}
+       >
+        <Transactions />
        </Box>
     </Box>
 
