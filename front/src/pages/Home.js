@@ -70,9 +70,12 @@ const Home = () => {
         label="Age"
 
       >
-        <MenuItem value={10}>Ten</MenuItem>
-        <MenuItem value={20}>Twenty</MenuItem>
-        <MenuItem value={30}>Thirty</MenuItem>
+        {/* Frequency 2:33 is the time */}
+        <MenuItem value={7}>Last Week</MenuItem>
+        <MenuItem value={30}>Last Month</MenuItem>
+        <MenuItem value={365}>Last Year</MenuItem>
+        {/* <MenuItem value="custom">Custom</MenuItem> */}
+        {/* Date Range picker */}
       </Select>
 
         <Button

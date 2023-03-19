@@ -7,6 +7,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import TablePagination from '@mui/material/TablePagination';
 
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
@@ -28,8 +29,11 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
     },
   }));
 
+
+
 const Transactions = () => {
   return (
+    <>
     <TableContainer sx={{borderRadius: 0}} component={Paper}>
     <Table sx={{ maxWidth: 700,  }} aria-label="customized table">
     <TableHead>
@@ -86,6 +90,8 @@ const Transactions = () => {
     </TableBody>
     </Table>
     </TableContainer>
+
+  </>
   )
 }
 
