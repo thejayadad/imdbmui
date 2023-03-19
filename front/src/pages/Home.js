@@ -52,18 +52,29 @@ const Home = () => {
         width: "100%",
         height: 20,
         background: "#555",
-        padding: "30px",
+        padding: "50px",
         justifyContent: "space-between",
         alignItems: "center",
         display: "flex"
 
        }}
        >
-        <Typography>Filter System
+        <Select
+        sx={{
+            color: "black",
+            width: "140px",
+            height: "30px"
+        }}
+        labelId="demo-select-small"
+        id="demo-select-small"
+        label="Age"
 
+      >
+        <MenuItem value={10}>Ten</MenuItem>
+        <MenuItem value={20}>Twenty</MenuItem>
+        <MenuItem value={30}>Thirty</MenuItem>
+      </Select>
 
-
-        </Typography>
         <Button
         onClick={handleOpen}
             sx={{
