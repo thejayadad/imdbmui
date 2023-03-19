@@ -6,4 +6,17 @@
 
 body{
   font-family: monospace;
+  background: black;
+  color: white;
+}
+.app{
+  width: 70%;
+  margin: auto;
+  height: 100vh;
+}
+
+@media (max-width: 850px) {
+  .app{
+    width: 100%;
+  }
 }
